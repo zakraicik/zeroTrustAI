@@ -1,14 +1,18 @@
 [project]
-name = "mobile-slm-optimization"
+name = "zerotrustai"
 version = "0.1.0"
-description = "small language models for mobile"
+description = "Deploy modern, capable language models on smartphones with complete privacy - proving GPT-3.5-level AI can run locally without compromising user data"
 authors = [
     {name = "Zak Raicik"}
 ]
 license = {text = "MIT"}
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.13,<3.14"
 dependencies = [
+    "transformers (>=4.55.0,<5.0.0)",
+    "torch (>=2.8.0,<3.0.0)",
+    "huggingface-hub (>=0.34.4,<0.35.0)",
+    "onnxruntime (>=1.22.1,<2.0.0)"
 ]
 
 
