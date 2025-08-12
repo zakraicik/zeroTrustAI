@@ -39,4 +39,11 @@ TARGET_MODELS: dict[str, ModelConfig] = {
         target_devices=[DeviceTier.FLAGSHIP],
         expected_size_mb=15200,
     ),
+    "smollm2_135m": ModelConfig(
+        name="SmolLM2-135M",
+        huggingface_id="HuggingFaceTB/SmolLM2-135M-Instruct",
+        parameters=135_000_000,
+        target_devices=[DeviceTier.BUDGET, DeviceTier.MID_RANGE, DeviceTier.FLAGSHIP],
+        expected_size_mb=540,
+    ),
 }

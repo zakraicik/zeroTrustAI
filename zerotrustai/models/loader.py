@@ -43,6 +43,7 @@ class ModelLoader:
             repo_id=model_config.huggingface_id,
             local_dir=str(model_cache_path),
             local_dir_use_symlinks=False,
+            ignore_patterns=["*.onnx", "onnx/*"],
         )
 
         return str(model_cache_path)
